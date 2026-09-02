@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS Toggle — Settings</title>
+<style>
+  body { font-family: sans-serif; padding: 1em; max-width: 520px; }
+  textarea { width: 100%; height: 220px; font-family: monospace; font-size: 13px; }
+  button { margin-top: 0.6em; padding: 0.4em 1em; }
+  #status { margin-left: 0.8em; color: #2e7d32; }
+  p { color: #444; }
+</style>
+</head>
+<body>
+  <h1>JS Toggle — disabled sites</h1>
+  <p>
+    One hostname per line, e.g. <code>example.com</code>. Subdomains are matched
+    automatically. Pages on these sites load with JavaScript disabled. This list
+    is only read when a page loads — using the toolbar button on a tab does not
+    change it.
+  </p>
+  <textarea id="sites" spellcheck="false"></textarea>
+  <br>
+  <button id="save">Save</button>
+  <span id="status"></span>
+  <script src="options.js"></script>
+</body>
+</html>

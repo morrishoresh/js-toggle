@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "JS Toggle",
+  "version": "2.0.0",
+  "description": "Toolbar button to toggle JavaScript per tab, with a pre-defined disabled-sites list.",
+  "permissions": [
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "storage",
+    "<all_urls>"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "48": "icons/icon-on.svg",
+    "96": "icons/icon-on.svg"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon-on.svg",
+    "default_title": "JS Toggle"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "js-toggle@local.ext",
+      "strict_min_version": "78.0"
+    }
+  }
+}
