@@ -30,7 +30,11 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "js-toggle@local.ext",
-      "strict_min_version": "78.0"
+      "strict_min_version": "78.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   }
 }
+
