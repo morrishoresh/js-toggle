@@ -29,12 +29,11 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "js-toggle@local.ext",
-      "strict_min_version": "78.0",
+      "id": "{b77f09de-6558-40e1-b199-55abb0a2bd44}",
+      "strict_min_version": "140.0",
       "data_collection_permissions": {
         "required": ["none"]
       }
     }
   }
 }
-
