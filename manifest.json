@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "JS Toggle",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Toolbar button to toggle JavaScript per tab, with a pre-defined disabled-sites list.",
   "permissions": [
     "webNavigation",
@@ -16,11 +16,18 @@
     "open_in_tab": true
   },
   "icons": {
-    "48": "icons/icon-on.svg",
-    "96": "icons/icon-on.svg"
+    "16": "icons/icon-on-16.png",
+    "32": "icons/icon-on-32.png",
+    "48": "icons/icon-on-48.png",
+    "96": "icons/icon-on-96.png",
+    "128": "icons/icon-on-128.png"
   },
   "browser_action": {
-    "default_icon": "icons/icon-on.svg",
+    "default_icon": {
+      "16": "icons/icon-on-16.png",
+      "32": "icons/icon-on-32.png",
+      "48": "icons/icon-on-48.png"
+    },
     "default_title": "JS Toggle"
   },
   "background": {
