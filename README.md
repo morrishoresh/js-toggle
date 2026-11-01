@@ -3,16 +3,6 @@
 Firefox toolbar extension. Toggles JavaScript for the current site and shows
 its status via icon colour (green = enabled, red = disabled).
 
-## Install (temporary, for testing)
-1. `about:debugging#/runtime/this-firefox`
-2. "Load Temporary Add-on"
-3. Select `manifest.json`
-
-Temporary add-ons are removed when Firefox closes. For a permanent install
-the .xpi needs to be signed via addons.mozilla.org (self-distribution or
-listing), or Firefox needs to run with signature checks disabled
-(Developer/Nightly builds, `xpinstall.signatures.required` = false).
-
 ## Configuration
 Toolbar icon → right-click → "Manage Extension" → Preferences, or
 `about:addons` → JS Toggle → Preferences. Enter one hostname per line.
